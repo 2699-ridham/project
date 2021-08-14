@@ -49,6 +49,8 @@ cap
 // update 
 cap.age=45;
 // delete 
-delete cap.address.city;
+delete cap.friends[1];
+cap.friends[1]="";
+// caaddress.slice(0,2);
 console.log("````````````````````````");
 console.log(cap);

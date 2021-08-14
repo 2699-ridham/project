@@ -92,6 +92,7 @@ function organizedInManner(srcFilePath,dest,cat){
     let filePath=path.basename(srcFilePath);
     let destFilePath=path.join(catPath,filePath);
     fs.copyFileSync(srcFilePath,destFilePath);
+    fs.unlinkSync(srcFilePath);
     console.log(filePath,"copied to",cat);
 }
 
